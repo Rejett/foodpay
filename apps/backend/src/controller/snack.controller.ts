@@ -14,6 +14,7 @@ export async function listSnacks(req: Request, res: Response, next: NextFunction
 }
 
 export async function listBySnack(req: Request, res: Response, next: NextFunction) {
+
   try {
     const snack = String(req.params.snack)
 

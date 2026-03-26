@@ -1,9 +1,11 @@
 import "dotenv/config";
+import cors from "cors";
 import express, { Request, Response } from "express";
 import { snackRoutes } from "./routes/snack.route";
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req: Request, res: Response) => {

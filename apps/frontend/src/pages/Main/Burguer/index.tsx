@@ -5,7 +5,7 @@ import { useSnack } from '../../../hooks/useSnacks'
 
 export default function Burguer() {
   const { burgers } = useSnack()
-
+  
   return (
     <>
       <Head title='Humbúrgueres' />
